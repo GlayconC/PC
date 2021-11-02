@@ -1,0 +1,21 @@
+h3{
+    margin-left: 90px;
+    width: 350px;
+
+}
+
+form{
+    padding-left: 5px;
+}
+
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.div1 {
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 350px;
+    margin-top: 20px;
+}
