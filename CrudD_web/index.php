@@ -18,7 +18,7 @@ include_once 'conexao.php';
     <?php
     $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-    if (!empty($dados['SendLogin'])) {
+    if (!empty($dados['Login'])) {
         
         $query_usuario = "SELECT id, nome, usuario, senha
                         FROM usuarios 
@@ -58,7 +58,7 @@ include_once 'conexao.php';
         <label>Senha</label>
         <input type="password" name="senha" placeholder="Digite a senha" value="<?php if(isset($dados['senha'])){ echo $dados['senha']; } ?>"><br><br>
 
-        <input type="submit" value="Acessar" name="SendLogin">
+        <input type="submit" value="Acessar" name="Login">
     </form>
 
    
