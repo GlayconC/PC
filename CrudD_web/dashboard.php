@@ -2,10 +2,10 @@
 session_start();
 ob_start();
 include_once 'conexao.php';
-  // Está dizendo que o usuário ou a senha estão inválidos no banco de dados, mas não consegui descobrir qual o erro. Obs: Fiz um banco diferente do da aula só para ter usuário e senha.
-//if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
-   // $_SESSION['msg'] = "<p style='color: #ff0000'>Erro: Necessário realizar o login para acessar a página!</p>";
-    //header("Location: index.php");
+
+if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
+    $_SESSION['msg'] = "<p style='color: #ff0000'>Erro: Necessário realizar o login para acessar a página!</p>";
+    header("Location: index.php");
 
 ?>
 <!DOCTYPE html>
